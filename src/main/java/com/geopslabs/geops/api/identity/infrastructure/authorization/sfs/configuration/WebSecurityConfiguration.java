@@ -89,7 +89,7 @@ public class WebSecurityConfiguration {
             BearerTokenService tokenService,
             BCryptHashingService hashingService,
             UnauthorizedRequestHandlerEntryPoint authenticationEntryPoint,
-            @Value("${frontend.url:http://localhost:4200}") String frontendUrl,
+            @Value("${frontend.url:https://geops-app-web.vercel.app}") String frontendUrl,
             @Value("${prod.frontend.url:}") String prodFrontendUrl
     ) {
         this.userDetailsService = userDetailsService;
